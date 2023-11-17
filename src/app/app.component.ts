@@ -9,6 +9,13 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
+  //Aqui van los valores que se quieran pasar al HTML (se ingresan en doble llaves {{ valor }})
   title = 'redstoneaira';
+
+  changeTitle() {
+    this.title = 'Kanae';
+  }
 }
+
