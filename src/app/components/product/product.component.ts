@@ -13,5 +13,6 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class ProductComponent { 
   @Input() product!: Product;
+  
 
 }

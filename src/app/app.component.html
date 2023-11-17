@@ -1,4 +1,8 @@
-<H1>Hola {{ title }}</H1>
-<button (click)="changeTitle()">change</button>
+<H1 style="display: flex; justify-content: center;">¡Hola Mundo!</H1>
 
-<app-product [product]="product" *ngFor="let product of products"></app-product> <!--y aquí-->
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">
+
+    <app-product [product]="product" *ngFor="let product of products"></app-product> <!--y aquí-->
+</div>
+

@@ -1,7 +1,15 @@
 <ng-container *ngIf="product">
-    <h2>{{product.title}}</h2>
-    <p>$ {{ product.price }}</p>
-    <img [ngSrc]="product.images[0]" width="480" height="480">
+
+
+    <div class="card" style="padding: 10px; text-align: center; width: 200px; height: 400px;">
+        <div class="image">
+            <img [ngSrc]="product.image" width="100" height="100" alt="Producto" style="max-height: 200px; width: auto;">
+        </div>
+        <h3 style="margin: 10px 0;">{{product.title}}</h3>
+        <p style="color: #888;">Precio: $ {{ product.price }}</p>
+        <p class="descripcion">{{ product.description }}</p>
+    </div>
+
 </ng-container>
 
 <ng-container *ngIf="!product">

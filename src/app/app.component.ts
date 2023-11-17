@@ -18,7 +18,6 @@ import { Product } from './models/product.model';
 })
 
 export class AppComponent {
-  //Aqui van los valores que se quieran pasar al HTML (se ingresan en doble llaves {{ valor }})
   title = 'redstoneaira';
   http = inject(HttpClient)
   products: Product[] = []; //<--aqui
@@ -28,7 +27,8 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.http.get<Product[]>('https://api.escuelajs.co/api/v1/products').subscribe((data) => {
+    this.http.get<Product[]>('https://fakestoreapi.com/products/').subscribe((data) => {
+      console.log(data)
       this.products = data;//<--aqui
     })
   }

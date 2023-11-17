@@ -1,0 +1,18 @@
+.image {
+    height: 150px;
+}
+.card{
+    margin: 20px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.descripcion {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    height: -webkit-fill-available;
+    overflow: hidden;
+    height: 200px;
+}
