@@ -1,2 +1,4 @@
 <H1>Hola {{ title }}</H1>
 <button (click)="changeTitle()">change</button>
+
+<app-product [product]="product" *ngFor="let product of products"></app-product>
