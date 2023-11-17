@@ -13,5 +13,5 @@ import { Product } from './../../models/product.model'
 })
 export class ProductComponent { 
   @Input() product!: Product;
-  //              ^-este
+
 }
