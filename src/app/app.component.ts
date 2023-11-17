@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { NgOptimizedImage } from '@angular/common';
+
 
 import { ProductComponent } from "./components/product/product.component"
 import { Product } from './models/product.model';

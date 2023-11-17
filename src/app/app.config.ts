@@ -5,7 +5,7 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
 import { HttpClientModule } from "@angular/common/http";
-
+import { NgOptimizedImage } from '@angular/common';
 
 
 

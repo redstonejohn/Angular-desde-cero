@@ -1,7 +1,7 @@
 <ng-container *ngIf="product">
     <h2>{{product.title}}</h2>
     <p>$ {{ product.price }}</p>
-    <img [src]="product.images" alt="">
+    <img [ngSrc]="product.images[0]" width="480" height="480">
 </ng-container>
 
 <ng-container *ngIf="!product">
