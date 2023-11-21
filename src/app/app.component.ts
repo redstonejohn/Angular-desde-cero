@@ -27,10 +27,10 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.http.get<Product[]>('https://fakestoreapi.com/products/').subscribe((data) => {
-      console.log(data)
-      this.products = data;//<--aqui
+    this.http.get<Product[]>('http://localhost:8000/').subscribe((data) => {
+      this.products = JSON.parse(""+data)
     })
   }
 }
+
 
